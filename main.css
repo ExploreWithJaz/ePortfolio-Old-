@@ -53,3 +53,27 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: url('asset/background-image.webp') center/cover no-repeat; /* Replace 'your-background-image.jpg' with your actual image URL */
+    height: 100vh;
+    display: flex;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha (fourth value) to control transparency */
+  }
+
+  .content {
+    z-index: 1; /* Place content above the overlay */
+    /* Add your content styling here */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background: #fff; /* Optional: Add a solid background for the content */
+  }
