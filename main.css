@@ -62,22 +62,38 @@ body {
   margin: 0;
   padding: 0;
   background: url('asset/background-image.webp') center/cover no-repeat; /* Replace 'your-background-image.jpg' with your actual image URL */
+  background-position: 300px 0; /* Move the background image by 300 pixels to the right */
   height: 100vh;
-  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  overflow-y: auto; /* Allow the container to scroll */
+  z-index: 1; /* Place the container above the fixed overlay */
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha (fourth value) to control transparency */
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha (fourth value) to control transparency */
+  pointer-events: none;
 }
 
 .content {
   z-index: 1; /* Place content above the overlay */
   /* Add your content styling here */
-  color: #333;
   text-align: center;
   padding: 20px;
-  background: #fff; /* Optional: Add a solid background for the content */
+  float: left;
+}
+
+.logo img{
+  width: 150px;
+  height: 150px;
+  float: right;
 }
