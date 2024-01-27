@@ -160,6 +160,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .description {
@@ -167,8 +168,10 @@ body {
 }
 
 .skills {
-  border: solid;
+  border: yellow solid;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 70px;
 }
 
 .container_skills {
@@ -185,11 +188,13 @@ body {
 .box {
   height: auto;
   width: auto;
-  border: black solid;
+  border: yellow solid;
   padding: 20px;
   overflow: hidden;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 50px 0px;
   background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 23px;
 }
 
 /* .box_container {
