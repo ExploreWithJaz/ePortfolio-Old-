@@ -251,6 +251,13 @@ body {
   width: 80%;
 }
 
+input {
+  padding: 10px 20px;
+  border: solid yellow;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 100px;
+}
+
 /* .column_box1 img {
   margin: auto;
 } */
