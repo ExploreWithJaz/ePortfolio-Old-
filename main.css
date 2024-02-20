@@ -56,15 +56,52 @@
   color: #f1f1f1;
 }
 
+@media screen and (max-width: 600px) {
+  .sidenav {
+    width: 200px;
+  }
+
+  .sidenav img {
+    width: 45%;
+  }
+
+  .sidenav a {
+    font-size: 13px;
+    padding: 10px 4px 15px 4px;
+  }
+
+  .sidenav h1 {
+    font-size: 1.2em;
+  }
+
+  .sidenav p {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sidenav {
+    width: 250px;
+  }
+
+  .sidenav a {
+    font-size: 16px;
+    padding: 14px 7px 20px 7px;
+  }
+
+  .sidenav h1 {
+    font-size: 2em;
+  }
+
+  .sidenav p {
+    font-size: medium;
+  }
+}
+
 .main {
   margin-left: 300px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 10px 50px 10px 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 body {
@@ -79,8 +116,30 @@ body {
 
 .logo img {
   float: right;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 180px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: 200px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-position: 250px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
 }
 
 .content h1{
@@ -97,6 +156,17 @@ body {
 
 .auto-type {
   border-bottom: yellow solid;
+}
+
+@media screen and (max-width: 600px) {
+  .content h1 {
+    left: 300px;
+    font-size: xx-large;
+  }
+
+  .content h4 {
+    left: 300px;
+  }
 }
 
 .content_2 {
